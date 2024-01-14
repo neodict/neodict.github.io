@@ -1,0 +1,65 @@
+.header {
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.slogan {
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.footer {
+    clear: both;
+    padding-top: 10px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align:center;
+}
+
+.left {
+    order: 1;
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+
+.right {
+    order: 2;
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:600px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .left {
+        flex-basis: 50%;
+        order: 1;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .right {
+        flex-basis: 50%;
+        order: 2;
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
